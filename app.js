@@ -21,7 +21,7 @@ app.use('/static', express.static('static')) // For serving static files
 app.use(express.urlencoded())
 // PUG SPECIFIC STUFF
 app.set('view engine', 'pug') // Set the template engine as pug
-app.set('views', path.join('./static', 'views')) // Set the views directory
+app.set('views', path.join('./views', 'views')) // Set the views directory
  
 // ENDPOINTS
 app.get('/', (req, res)=>{
